@@ -1,0 +1,113 @@
+{% extends "base.html" %}
+
+{% block title %}Health Symptom Checker - Input{% endblock %}
+
+{% block content %}
+<div class="card">
+  <div class="card-body">
+    <form id="symptomForm" method="POST" action="{{ url_for('analyze') }}">
+      <!-- Demographic Information -->
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label for="userAge" class="form-label fw-bold">Age:</label>
+          <input type="number" class="form-control" id="userAge" name="userAge" placeholder="e.g., 65">
+        </div>
+        <div class="col-md-6">
+          <label for="userSex" class="form-label fw-bold">Sex:</label>
+          <select class="form-select" id="userSex" name="userSex">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other / Prefer not to say</option>
+          </select>
+        </div>
+      </div>
+      <!-- Symptom Input Section -->
+      <div class="mb-3 position-relative">
+        <label for="symptomInput" class="form-label fw-bold">Enter a Symptom:</label>
+        <input type="text" id="symptomInput" placeholder="e.g., headache" autocomplete="off" class="form-control">
+        <ul id="suggestions" class="suggestion-list"></ul>
+      </div>
+      <button type="button" class="btn btn-lg btn-outline-primary" onclick="addSymptom()">Add Symptom</button>
+      <!-- Selected Symptoms List -->
+      <div class="mt-4">
+        <h5 class="fw-bold">Selected Symptoms:</h5>
+        <ul id="selectedSymptoms" class="list-group"></ul>
+      </div>
+      <!-- Hidden input to hold symptoms JSON -->
+      <input type="hidden" name="symptoms_json" id="symptoms_json">
+      <!-- Submit Button -->
+      <button type="button" class="btn btn-lg btn-success w-100 mt-4" onclick="submitForm()">Analyze Symptoms</button>
+    </form>
+    <!-- Close Program Link -->
+    <div class="mt-3">
+      <a href="{{ url_for('close') }}" class="btn btn-lg btn-danger w-100">Close Program</a>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+  // Get symptom suggestions from Flask.
+  const symptomSuggestions = {{ symptom_list | tojson | safe }};
+  let addedSymptoms = [];
+
+  // Auto-suggest function.
+  function showSuggestions() {
+    const inputVal = document.getElementById('symptomInput').value.toLowerCase();
+    const suggestionBox = document.getElementById('suggestions');
+    suggestionBox.innerHTML = '';
+    if (!inputVal) return;
+    const matches = symptomSuggestions.filter(sym => sym.toLowerCase().startsWith(inputVal));
+    matches.forEach(sym => {
+      const li = document.createElement('li');
+      li.textContent = sym;
+      li.onclick = () => {
+        document.getElementById('symptomInput').value = sym;
+        suggestionBox.innerHTML = '';
+      };
+      suggestionBox.appendChild(li);
+    });
+  }
+  document.getElementById('symptomInput').addEventListener('input', showSuggestions);
+
+  // Add symptom to list.
+  function addSymptom() {
+    const input = document.getElementById('symptomInput');
+    const symptom = input.value.trim().toLowerCase();
+    if (symptom && !addedSymptoms.includes(symptom)) {
+      addedSymptoms.push(symptom);
+      updateSelectedSymptomsList();
+    }
+    input.value = '';
+    document.getElementById('suggestions').innerHTML = '';
+  }
+
+  // Update the list display.
+  function updateSelectedSymptomsList() {
+    const list = document.getElementById('selectedSymptoms');
+    list.innerHTML = '';
+    addedSymptoms.forEach((sym, idx) => {
+      const li = document.createElement('li');
+      li.className = 'list-group-item d-flex justify-content-between align-items-center';
+      li.innerHTML = `
+        <span>${sym}</span>
+        <button class="btn btn-sm btn-danger" onclick="removeSymptom(${idx})">Remove</button>
+      `;
+      list.appendChild(li);
+    });
+  }
+
+  // Remove a symptom.
+  function removeSymptom(index) {
+    addedSymptoms.splice(index, 1);
+    updateSelectedSymptomsList();
+  }
+
+  // Submit the form.
+  function submitForm() {
+    document.getElementById('symptoms_json').value = JSON.stringify(addedSymptoms);
+    document.getElementById('symptomForm').submit();
+  }
+</script>
+{% endblock %}

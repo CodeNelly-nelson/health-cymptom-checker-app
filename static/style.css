@@ -1,0 +1,181 @@
+/* Color palette from your provided hex values */
+:root {
+  --la-rioja: #b2c10e;    /* bright green */
+  --tuatara: #252524;     /* dark gray/black */
+  --mercury: #e7e7e7;     /* light gray background */
+  --dusty-gray: #949494;
+  --jumbo: #89898a;
+  --avocado: #95986b;
+  --chicago: #5e5a57;
+  --eagle: #bcbe9f;
+  --silver-sand: #b2b4b5;
+  --fern-frond: #547427;  /* deeper green */
+
+  /* Aliases */
+  --bg-main: var(--mercury);
+  --color-primary: var(--la-rioja);
+  --color-secondary: var(--fern-frond);
+  --color-text: var(--tuatara);
+}
+
+/* Global Styles */
+body {
+  background-color: var(--bg-main);
+  color: var(--color-text);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Banner */
+.header-banner {
+  background-color: var(--color-primary);
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 4px solid var(--color-secondary);
+}
+.header-banner h1 {
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Main Container Card */
+.card {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: #fff;
+}
+.card-body {
+  padding: 2rem;
+}
+
+/* Form Elements */
+.form-select {
+  border: 2px solid var(--color-primary);
+  border-radius: 4px;
+  color: var(--color-text);
+}
+#symptomInput {
+  border: 2px solid var(--color-primary);
+  border-radius: 4px;
+  padding: 0.5rem;
+  width: 100%;
+  color: var(--color-text);
+}
+#symptomInput:focus {
+  outline: none;
+  box-shadow: 0 0 5px var(--color-primary);
+}
+.suggestion-list {
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ccc;
+  max-height: 150px;
+  overflow-y: auto;
+  border-radius: 0 0 4px 4px;
+}
+.suggestion-list li {
+  padding: 0.5rem;
+  cursor: pointer;
+  list-style: none;
+}
+.suggestion-list li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Selected Symptoms List */
+.list-group-item {
+  border: 1px solid var(--color-primary);
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Buttons Styling */
+.btn-outline-primary {
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+.btn-outline-primary:hover {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+.btn-success {
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
+}
+.btn-success:hover {
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+.btn-danger {
+  background-color: #c0392b;
+  border-color: #c0392b;
+}
+.btn-danger:hover {
+  background-color: #e74c3c;
+  border-color: #e74c3c;
+}
+.btn-secondary {
+  background-color: var(--silver-sand);
+  border-color: var(--silver-sand);
+  color: var(--tuatara);
+}
+.btn-secondary:hover {
+  background-color: var(--dusty-gray);
+  border-color: var(--dusty-gray);
+  color: #fff;
+}
+
+/* Results Section */
+#results h2 {
+  color: var(--color-secondary);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.card-title {
+  color: var(--color-secondary);
+  font-weight: 600;
+}
+.card-text {
+  color: var(--color-text);
+}
+
+/* Disclaimer Box */
+.disclaimer {
+  background-color: #f8f8f8;
+  padding: 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  margin-top: 1.5rem;
+  border-left: 4px solid var(--color-primary);
+}
+
+/* Match squares for condition strength */
+.match-squares {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.filled-square,
+.empty-square {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  border-radius: 3px;
+}
+
+.filled-square {
+  background-color: #58c1c8;
+}
+
+.empty-square {
+  background-color: #e0e0e0;
+}

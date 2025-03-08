@@ -1,0 +1,1680 @@
+{
+  "diseases": [
+    {
+      "name": "Common Cold",
+      "symptoms": [
+        "Nasal congestion",
+        "Runny nose",
+        "Sneezing",
+        "Sore throat",
+        "Mild cough"
+      ],
+      "treatment": [
+        "Rest",
+        "Fluids",
+        "Over-the-counter cold remedies"
+      ],
+      "follow_up_questions": [
+        "How many days have you had symptoms?",
+        "Do you have a fever?"
+      ]
+    },
+    {
+      "name": "Influenza (Flu)",
+      "symptoms": [
+        "High fever",
+        "Cough",
+        "Sore throat",
+        "Muscle aches",
+        "Fatigue"
+      ],
+      "treatment": [
+        "Rest",
+        "Antiviral medications (if early in course)",
+        "Fluids"
+      ],
+      "follow_up_questions": [
+        "Did your symptoms begin suddenly?",
+        "Are you at risk for complications?"
+      ]
+    },
+    {
+      "name": "COVID-19",
+      "symptoms": [
+        "Fever",
+        "Cough",
+        "Shortness of breath",
+        "Loss of taste or smell",
+        "Fatigue"
+      ],
+      "treatment": [
+        "Self-isolation",
+        "Symptomatic treatment",
+        "Seek medical care if symptoms worsen"
+      ],
+      "follow_up_questions": [
+        "Have you been exposed to someone with COVID-19?",
+        "Are you experiencing difficulty breathing?"
+      ]
+    },
+    {
+      "name": "Appendicitis",
+      "symptoms": [
+        "Abdominal pain (starts near the navel, moves to lower right)",
+        "Nausea",
+        "Loss of appetite",
+        "Low-grade fever"
+      ],
+      "treatment": [
+        "Emergency surgical removal of the appendix",
+        "Antibiotics if infection is present"
+      ],
+      "follow_up_questions": [
+        "Did the abdominal pain move from your navel to the lower right side?",
+        "Is the pain worsening with movement?"
+      ]
+    },
+    {
+      "name": "Migraine",
+      "symptoms": [
+        "Severe, throbbing headache",
+        "Nausea",
+        "Sensitivity to light and sound",
+        "Possible visual aura"
+      ],
+      "treatment": [
+        "Over-the-counter pain relievers",
+        "Prescription migraine medications",
+        "Rest in a dark, quiet room"
+      ],
+      "follow_up_questions": [
+        "Is your headache accompanied by visual disturbances?",
+        "Does light worsen your headache?"
+      ]
+    },
+    {
+      "name": "Diabetes Mellitus",
+      "symptoms": [
+        "Increased thirst",
+        "Frequent urination",
+        "Fatigue",
+        "Blurred vision"
+      ],
+      "treatment": [
+        "Diet and exercise",
+        "Insulin therapy or oral medications"
+      ],
+      "follow_up_questions": [
+        "Have you noticed unexplained weight loss?",
+        "Do you experience frequent urination?"
+      ]
+    },
+    {
+      "name": "Hypertension",
+      "symptoms": [
+        "Often asymptomatic",
+        "Headaches",
+        "Dizziness"
+      ],
+      "treatment": [
+        "Lifestyle changes",
+        "Antihypertensive medications"
+      ],
+      "follow_up_questions": [
+        "Have you had recent blood pressure readings?",
+        "Do you experience frequent headaches?"
+      ]
+    },
+    {
+      "name": "Asthma",
+      "symptoms": [
+        "Wheezing",
+        "Shortness of breath",
+        "Chest tightness"
+      ],
+      "treatment": [
+        "Inhalers",
+        "Avoidance of triggers",
+        "Long-term controller medications"
+      ],
+      "follow_up_questions": [
+        "Do you experience shortness of breath during exercise?",
+        "Do you have a history of allergies?"
+      ]
+    },
+    {
+      "name": "Chronic Obstructive Pulmonary Disease (COPD)",
+      "symptoms": [
+        "Chronic cough",
+        "Shortness of breath",
+        "Wheezing",
+        "Frequent respiratory infections"
+      ],
+      "treatment": [
+        "Inhalers",
+        "Oxygen therapy",
+        "Smoking cessation"
+      ],
+      "follow_up_questions": [
+        "Have you been a smoker?",
+        "Do you experience breathlessness during routine activities?"
+      ]
+    },
+    {
+      "name": "Pneumonia",
+      "symptoms": [
+        "Fever",
+        "Cough",
+        "Chest pain",
+        "Shortness of breath"
+      ],
+      "treatment": [
+        "Antibiotics (for bacterial pneumonia)",
+        "Rest",
+        "Fluids"
+      ],
+      "follow_up_questions": [
+        "Is your cough producing phlegm?",
+        "Are you experiencing chest pain when breathing?"
+      ]
+    },
+    {
+      "name": "Tuberculosis",
+      "symptoms": [
+        "Persistent cough",
+        "Weight loss",
+        "Night sweats",
+        "Fever"
+      ],
+      "treatment": [
+        "Long-term, multi-drug antibiotic therapy"
+      ],
+      "follow_up_questions": [
+        "Have you been in contact with someone with TB?",
+        "Are you experiencing night sweats?"
+      ]
+    },
+    {
+      "name": "Bronchitis",
+      "symptoms": [
+        "Persistent cough",
+        "Mucus production",
+        "Fatigue"
+      ],
+      "treatment": [
+        "Rest",
+        "Fluids",
+        "Bronchodilators"
+      ],
+      "follow_up_questions": [
+        "Is your cough severe?",
+        "Have you had bronchitis before?"
+      ]
+    },
+    {
+      "name": "Gastroenteritis",
+      "symptoms": [
+        "Diarrhea",
+        "Vomiting",
+        "Abdominal pain",
+        "Fever"
+      ],
+      "treatment": [
+        "Hydration",
+        "Oral rehydration solutions",
+        "Rest"
+      ],
+      "follow_up_questions": [
+        "Have you traveled recently?",
+        "Do you have a fever?"
+      ]
+    },
+    {
+      "name": "Urinary Tract Infection (UTI)",
+      "symptoms": [
+        "Frequent urination",
+        "Burning sensation during urination",
+        "Cloudy or strong-smelling urine",
+        "Lower abdominal pain"
+      ],
+      "treatment": [
+        "Antibiotics",
+        "Increased water intake"
+      ],
+      "follow_up_questions": [
+        "Do you experience pain during urination?",
+        "Have you had UTIs before?"
+      ]
+    },
+    {
+      "name": "Stroke (Cerebrovascular Accident)",
+      "symptoms": [
+        "Sudden numbness or weakness",
+        "Confusion",
+        "Trouble speaking",
+        "Vision problems"
+      ],
+      "treatment": [
+        "Emergency medical care",
+        "Clot-busting drugs (if ischemic)"
+      ],
+      "follow_up_questions": [
+        "Did your symptoms come on suddenly?",
+        "Is one side of your body weaker than the other?"
+      ]
+    },
+    {
+      "name": "Heart Attack (Myocardial Infarction)",
+      "symptoms": [
+        "Chest pain",
+        "Shortness of breath",
+        "Sweating",
+        "Nausea"
+      ],
+      "treatment": [
+        "Immediate emergency care",
+        "Medications such as aspirin",
+        "Surgery if needed"
+      ],
+      "follow_up_questions": [
+        "Is the chest pain severe and persistent?",
+        "Do you have a history of heart disease?"
+      ]
+    },
+    {
+      "name": "Osteoarthritis",
+      "symptoms": [
+        "Joint pain",
+        "Stiffness",
+        "Swelling in joints"
+      ],
+      "treatment": [
+        "Pain relievers",
+        "Physical therapy",
+        "Joint replacement in severe cases"
+      ],
+      "follow_up_questions": [
+        "Does your joint pain worsen with activity?",
+        "Are you over 50 years old?"
+      ]
+    },
+    {
+      "name": "Rheumatoid Arthritis",
+      "symptoms": [
+        "Joint pain",
+        "Swelling",
+        "Morning stiffness",
+        "Fatigue"
+      ],
+      "treatment": [
+        "Disease-modifying antirheumatic drugs (DMARDs)",
+        "Physical therapy"
+      ],
+      "follow_up_questions": [
+        "Are your joints swollen in the morning?",
+        "Is there symmetrical joint pain?"
+      ]
+    },
+    {
+      "name": "Gout",
+      "symptoms": [
+        "Severe joint pain (often in the big toe)",
+        "Redness",
+        "Swelling"
+      ],
+      "treatment": [
+        "Medications to lower uric acid",
+        "Pain relief medications"
+      ],
+      "follow_up_questions": [
+        "Is the pain concentrated in one joint?",
+        "Do you have a history of high uric acid?"
+      ]
+    },
+    {
+      "name": "Peptic Ulcer Disease",
+      "symptoms": [
+        "Burning stomach pain",
+        "Bloating",
+        "Heartburn"
+      ],
+      "treatment": [
+        "Acid reducers",
+        "Antibiotics if H. pylori positive"
+      ],
+      "follow_up_questions": [
+        "Do you experience burning stomach pain?",
+        "Is the pain relieved by eating?"
+      ]
+    },
+    {
+      "name": "Gallstones",
+      "symptoms": [
+        "Abdominal pain",
+        "Nausea",
+        "Vomiting",
+        "Jaundice"
+      ],
+      "treatment": [
+        "Surgical removal of the gallbladder",
+        "Pain management"
+      ],
+      "follow_up_questions": [
+        "Do you experience severe pain after eating fatty foods?",
+        "Have you noticed jaundice?"
+      ]
+    },
+    {
+      "name": "Kidney Stones",
+      "symptoms": [
+        "Severe pain in the back or side",
+        "Blood in urine",
+        "Nausea"
+      ],
+      "treatment": [
+        "Pain management",
+        "Hydration",
+        "Surgical removal in some cases"
+      ],
+      "follow_up_questions": [
+        "Do you experience severe flank pain?",
+        "Have you noticed blood in your urine?"
+      ]
+    },
+    {
+      "name": "Hepatitis A",
+      "symptoms": [
+        "Jaundice",
+        "Fatigue",
+        "Abdominal pain",
+        "Nausea"
+      ],
+      "treatment": [
+        "Rest",
+        "Hydration",
+        "Supportive care"
+      ],
+      "follow_up_questions": [
+        "Have you been exposed to contaminated food or water?",
+        "Do you have jaundice?"
+      ]
+    },
+    {
+      "name": "Hepatitis B",
+      "symptoms": [
+        "Jaundice",
+        "Fatigue",
+        "Joint pain",
+        "Abdominal discomfort"
+      ],
+      "treatment": [
+        "Antiviral medications",
+        "Regular monitoring"
+      ],
+      "follow_up_questions": [
+        "Do you have a history of liver disease?",
+        "Have you been vaccinated for hepatitis B?"
+      ]
+    },
+    {
+      "name": "Hepatitis C",
+      "symptoms": [
+        "Fatigue",
+        "Jaundice",
+        "Abdominal pain"
+      ],
+      "treatment": [
+        "Antiviral medications",
+        "Liver monitoring"
+      ],
+      "follow_up_questions": [
+        "Have you been exposed to contaminated needles?",
+        "Do you have a history of liver issues?"
+      ]
+    },
+    {
+      "name": "HIV/AIDS",
+      "symptoms": [
+        "Flu-like symptoms",
+        "Weight loss",
+        "Recurring infections",
+        "Fatigue"
+      ],
+      "treatment": [
+        "Antiretroviral therapy (ART)"
+      ],
+      "follow_up_questions": [
+        "Have you engaged in high-risk behaviors?",
+        "Have you had unprotected sex or needle sharing?"
+      ]
+    },
+    {
+      "name": "Lyme Disease",
+      "symptoms": [
+        "Erythema migrans rash",
+        "Fever",
+        "Chills",
+        "Fatigue"
+      ],
+      "treatment": [
+        "Antibiotics"
+      ],
+      "follow_up_questions": [
+        "Have you been in tick-infested areas?",
+        "Do you recall a tick bite?"
+      ]
+    },
+    {
+      "name": "Malaria",
+      "symptoms": [
+        "Fever",
+        "Chills",
+        "Headache",
+        "Sweats",
+        "Nausea"
+      ],
+      "treatment": [
+        "Antimalarial medications",
+        "Supportive care"
+      ],
+      "follow_up_questions": [
+        "Have you traveled to malaria-endemic regions?",
+        "Do you have cyclic fevers?"
+      ]
+    },
+    {
+      "name": "Dengue Fever",
+      "symptoms": [
+        "High fever",
+        "Severe headache",
+        "Pain behind the eyes",
+        "Joint and muscle pain"
+      ],
+      "treatment": [
+        "Hydration",
+        "Pain relievers (avoid NSAIDs)"
+      ],
+      "follow_up_questions": [
+        "Have you traveled to tropical areas?",
+        "Is your muscle or joint pain severe?"
+      ]
+    },
+    {
+      "name": "Zika Virus",
+      "symptoms": [
+        "Mild fever",
+        "Rash",
+        "Joint pain",
+        "Conjunctivitis"
+      ],
+      "treatment": [
+        "Rest",
+        "Fluids",
+        "Symptomatic care"
+      ],
+      "follow_up_questions": [
+        "Have you been in areas with Zika outbreaks?",
+        "Do you have a rash with joint pain?"
+      ]
+    },
+    {
+      "name": "Ebola Virus Disease",
+      "symptoms": [
+        "Fever",
+        "Severe headache",
+        "Muscle pain",
+        "Vomiting",
+        "Diarrhea"
+      ],
+      "treatment": [
+        "Supportive care",
+        "Experimental treatments"
+      ],
+      "follow_up_questions": [
+        "Have you been in regions with Ebola outbreaks?",
+        "Are you experiencing severe gastrointestinal symptoms?"
+      ]
+    },
+    {
+      "name": "Chickenpox (Varicella)",
+      "symptoms": [
+        "Itchy rash",
+        "Fever",
+        "Tiredness",
+        "Loss of appetite"
+      ],
+      "treatment": [
+        "Calamine lotion",
+        "Antiviral medications (severe cases)",
+        "Rest"
+      ],
+      "follow_up_questions": [
+        "Have you been exposed to chickenpox?",
+        "Do you have an itchy rash starting on the face?"
+      ]
+    },
+    {
+      "name": "Shingles (Herpes Zoster)",
+      "symptoms": [
+        "Painful rash with blisters",
+        "Fever"
+      ],
+      "treatment": [
+        "Antiviral medications",
+        "Pain relievers",
+        "Topical creams"
+      ],
+      "follow_up_questions": [
+        "Have you had chickenpox before?",
+        "Is the rash localized on one side of your body?"
+      ]
+    },
+    {
+      "name": "Measles",
+      "symptoms": [
+        "High fever",
+        "Cough",
+        "Runny nose",
+        "Red eyes",
+        "Rash starting on the face"
+      ],
+      "treatment": [
+        "Supportive care",
+        "Vitamin A supplementation"
+      ],
+      "follow_up_questions": [
+        "Have you been vaccinated for measles?",
+        "Did the rash start on your face and spread downward?"
+      ]
+    },
+    {
+      "name": "Mumps",
+      "symptoms": [
+        "Swollen salivary glands",
+        "Fever",
+        "Headache",
+        "Muscle aches"
+      ],
+      "treatment": [
+        "Rest",
+        "Pain relievers",
+        "Hydration"
+      ],
+      "follow_up_questions": [
+        "Have you been vaccinated for mumps?",
+        "Do you notice swelling near your jaw?"
+      ]
+    },
+    {
+      "name": "Rubella (German measles)",
+      "symptoms": [
+        "Mild fever",
+        "Rash",
+        "Swollen glands",
+        "Joint pain"
+      ],
+      "treatment": [
+        "Rest",
+        "Over-the-counter pain relievers"
+      ],
+      "follow_up_questions": [
+        "Have you been vaccinated for rubella?",
+        "Do you have a mild rash and joint pain?"
+      ]
+    },
+    {
+      "name": "Whooping Cough (Pertussis)",
+      "symptoms": [
+        "Severe coughing fits with a whooping sound",
+        "Runny nose",
+        "Fever"
+      ],
+      "treatment": [
+        "Antibiotics",
+        "Supportive care"
+      ],
+      "follow_up_questions": [
+        "Is your cough paroxysmal with a whooping sound?",
+        "Have you been exposed to pertussis?"
+      ]
+    },
+    {
+      "name": "Polio (Poliomyelitis)",
+      "symptoms": [
+        "Fever",
+        "Fatigue",
+        "Headache",
+        "Stiff neck",
+        "Muscle weakness"
+      ],
+      "treatment": [
+        "No cure (supportive care only)",
+        "Prevention via vaccination"
+      ],
+      "follow_up_questions": [
+        "Have you been vaccinated for polio?",
+        "Do you experience sudden muscle weakness?"
+      ]
+    },
+    {
+      "name": "Leprosy",
+      "symptoms": [
+        "Skin lesions",
+        "Numbness",
+        "Muscle weakness"
+      ],
+      "treatment": [
+        "Multidrug antibiotic therapy"
+      ],
+      "follow_up_questions": [
+        "Do you have discolored patches on your skin with numbness?",
+        "Have you been in an endemic area?"
+      ]
+    },
+    {
+      "name": "Multiple Sclerosis",
+      "symptoms": [
+        "Numbness",
+        "Vision problems",
+        "Weakness",
+        "Balance issues"
+      ],
+      "treatment": [
+        "Disease-modifying therapies",
+        "Symptomatic treatment"
+      ],
+      "follow_up_questions": [
+        "Have you experienced episodes of vision loss?",
+        "Do you have limb weakness?"
+      ]
+    },
+    {
+      "name": "Parkinson's Disease",
+      "symptoms": [
+        "Tremors",
+        "Bradykinesia",
+        "Stiffness",
+        "Balance problems"
+      ],
+      "treatment": [
+        "Medications (e.g., Levodopa)",
+        "Physical therapy"
+      ],
+      "follow_up_questions": [
+        "Do you experience tremors or slow movement?",
+        "Has your balance been affected?"
+      ]
+    },
+    {
+      "name": "Alzheimer's Disease",
+      "symptoms": [
+        "Memory loss",
+        "Difficulty planning",
+        "Confusion",
+        "Personality changes"
+      ],
+      "treatment": [
+        "Cholinesterase inhibitors",
+        "Supportive care"
+      ],
+      "follow_up_questions": [
+        "Do you notice significant memory loss?",
+        "Is confusion a new development?"
+      ]
+    },
+    {
+      "name": "Epilepsy",
+      "symptoms": [
+        "Recurrent seizures",
+        "Confusion",
+        "Loss of consciousness"
+      ],
+      "treatment": [
+        "Antiepileptic drugs"
+      ],
+      "follow_up_questions": [
+        "Have you experienced unprovoked seizures?",
+        "Do you have a history of neurological issues?"
+      ]
+    },
+    {
+      "name": "Anxiety Disorder",
+      "symptoms": [
+        "Excessive worry",
+        "Restlessness",
+        "Irritability"
+      ],
+      "treatment": [
+        "Counseling",
+        "Anxiolytic medications"
+      ],
+      "follow_up_questions": [
+        "Do you experience persistent worry?",
+        "Have you had panic attacks?"
+      ]
+    },
+    {
+      "name": "Depression",
+      "symptoms": [
+        "Persistent sadness",
+        "Loss of interest",
+        "Fatigue",
+        "Changes in appetite"
+      ],
+      "treatment": [
+        "Antidepressants",
+        "Psychotherapy"
+      ],
+      "follow_up_questions": [
+        "Have you felt depressed for more than two weeks?",
+        "Is it difficult to enjoy activities you once liked?"
+      ]
+    },
+    {
+      "name": "Bipolar Disorder",
+      "symptoms": [
+        "Episodes of depression",
+        "Episodes of mania",
+        "Mood swings"
+      ],
+      "treatment": [
+        "Mood stabilizers",
+        "Psychotherapy"
+      ],
+      "follow_up_questions": [
+        "Do you experience extreme mood changes?",
+        "Have you had periods of high energy followed by depression?"
+      ]
+    },
+    {
+      "name": "Schizophrenia",
+      "symptoms": [
+        "Hallucinations",
+        "Delusions",
+        "Disorganized thinking"
+      ],
+      "treatment": [
+        "Antipsychotic medications",
+        "Psychosocial therapy"
+      ],
+      "follow_up_questions": [
+        "Do you experience auditory hallucinations?",
+        "Do you have delusional beliefs?"
+      ]
+    },
+    {
+      "name": "Obsessive-Compulsive Disorder (OCD)",
+      "symptoms": [
+        "Intrusive thoughts",
+        "Compulsive behaviors"
+      ],
+      "treatment": [
+        "Cognitive-behavioral therapy",
+        "SSRIs"
+      ],
+      "follow_up_questions": [
+        "Do you have repetitive behaviors that interfere with daily life?",
+        "Are you troubled by persistent intrusive thoughts?"
+      ]
+    },
+    {
+      "name": "Post-Traumatic Stress Disorder (PTSD)",
+      "symptoms": [
+        "Flashbacks",
+        "Nightmares",
+        "Severe anxiety"
+      ],
+      "treatment": [
+        "Therapy (e.g., EMDR)",
+        "Medications"
+      ],
+      "follow_up_questions": [
+        "Have you experienced a traumatic event?",
+        "Do you have recurring distressing memories?"
+      ]
+    },
+    {
+      "name": "Eating Disorder (Anorexia Nervosa)",
+      "symptoms": [
+        "Extreme weight loss",
+        "Distorted body image",
+        "Restrictive eating"
+      ],
+      "treatment": [
+        "Nutritional rehabilitation",
+        "Psychotherapy"
+      ],
+      "follow_up_questions": [
+        "Do you have a distorted view of your body?",
+        "Have you experienced significant weight loss?"
+      ]
+    },
+    {
+      "name": "Irritable Bowel Syndrome (IBS)",
+      "symptoms": [
+        "Abdominal pain",
+        "Bloating",
+        "Diarrhea or constipation"
+      ],
+      "treatment": [
+        "Dietary changes",
+        "Fiber supplements",
+        "Stress management"
+      ],
+      "follow_up_questions": [
+        "Does your pain improve after a bowel movement?",
+        "Do you alternate between constipation and diarrhea?"
+      ]
+    },
+    {
+      "name": "Crohn's Disease",
+      "symptoms": [
+        "Abdominal pain",
+        "Diarrhea",
+        "Weight loss",
+        "Fatigue"
+      ],
+      "treatment": [
+        "Anti-inflammatory drugs",
+        "Immunosuppressants"
+      ],
+      "follow_up_questions": [
+        "Do you have chronic abdominal pain and diarrhea?",
+        "Have you experienced weight loss with digestive issues?"
+      ]
+    },
+    {
+      "name": "Ulcerative Colitis",
+      "symptoms": [
+        "Abdominal pain",
+        "Bloody diarrhea",
+        "Urgency to defecate"
+      ],
+      "treatment": [
+        "Anti-inflammatory drugs",
+        "Immunosuppressants"
+      ],
+      "follow_up_questions": [
+        "Do you notice blood in your stool?",
+        "Is your pain accompanied by frequent bowel movements?"
+      ]
+    },
+    {
+      "name": "Celiac Disease",
+      "symptoms": [
+        "Diarrhea",
+        "Abdominal pain",
+        "Bloating",
+        "Weight loss"
+      ],
+      "treatment": [
+        "Gluten-free diet"
+      ],
+      "follow_up_questions": [
+        "Do you feel discomfort after eating gluten?",
+        "Have you been tested for celiac disease?"
+      ]
+    },
+    {
+      "name": "Hypothyroidism",
+      "symptoms": [
+        "Fatigue",
+        "Weight gain",
+        "Cold intolerance",
+        "Dry skin"
+      ],
+      "treatment": [
+        "Thyroid hormone replacement therapy"
+      ],
+      "follow_up_questions": [
+        "Do you feel unusually tired?",
+        "Have you had your thyroid levels checked?"
+      ]
+    },
+    {
+      "name": "Hyperthyroidism",
+      "symptoms": [
+        "Weight loss",
+        "Rapid heartbeat",
+        "Heat intolerance",
+        "Anxiety"
+      ],
+      "treatment": [
+        "Antithyroid medications",
+        "Radioactive iodine therapy"
+      ],
+      "follow_up_questions": [
+        "Do you feel unusually anxious or notice a rapid heartbeat?",
+        "Have you lost weight without trying?"
+      ]
+    },
+    {
+      "name": "Anemia (Iron Deficiency)",
+      "symptoms": [
+        "Fatigue",
+        "Pale skin",
+        "Shortness of breath",
+        "Dizziness"
+      ],
+      "treatment": [
+        "Iron supplements",
+        "Dietary changes"
+      ],
+      "follow_up_questions": [
+        "Do you feel tired often?",
+        "Have you been tested for iron deficiency?"
+      ]
+    },
+    {
+      "name": "Sickle Cell Disease",
+      "symptoms": [
+        "Pain crises",
+        "Anemia",
+        "Swelling in hands and feet"
+      ],
+      "treatment": [
+        "Pain management",
+        "Hydroxyurea",
+        "Blood transfusions"
+      ],
+      "follow_up_questions": [
+        "Do you experience recurring pain episodes?",
+        "Have you been diagnosed with a blood disorder?"
+      ]
+    },
+    {
+      "name": "Hemophilia",
+      "symptoms": [
+        "Excessive bleeding",
+        "Easy bruising"
+      ],
+      "treatment": [
+        "Clotting factor replacement therapy"
+      ],
+      "follow_up_questions": [
+        "Do you have a family history of bleeding disorders?",
+        "Have you experienced unexplained bleeding?"
+      ]
+    },
+    {
+      "name": "Leukemia",
+      "symptoms": [
+        "Fatigue",
+        "Frequent infections",
+        "Easy bruising",
+        "Weight loss"
+      ],
+      "treatment": [
+        "Chemotherapy",
+        "Radiation therapy",
+        "Bone marrow transplant"
+      ],
+      "follow_up_questions": [
+        "Do you have frequent infections or unexplained bruising?",
+        "Have you experienced significant weight loss?"
+      ]
+    },
+    {
+      "name": "Lymphoma",
+      "symptoms": [
+        "Swollen lymph nodes",
+        "Fever",
+        "Night sweats",
+        "Weight loss"
+      ],
+      "treatment": [
+        "Chemotherapy",
+        "Radiation therapy",
+        "Targeted therapy"
+      ],
+      "follow_up_questions": [
+        "Do you have persistent swollen lymph nodes?",
+        "Have you experienced night sweats?"
+      ]
+    },
+    {
+      "name": "Melanoma",
+      "symptoms": [
+        "Changes in moles",
+        "Irregular borders",
+        "Color variation"
+      ],
+      "treatment": [
+        "Surgical removal",
+        "Immunotherapy",
+        "Targeted therapy"
+      ],
+      "follow_up_questions": [
+        "Have you noticed changes in a mole?",
+        "Do you have a family history of skin cancer?"
+      ]
+    },
+    {
+      "name": "Breast Cancer",
+      "symptoms": [
+        "Lump in the breast",
+        "Skin changes",
+        "Nipple discharge"
+      ],
+      "treatment": [
+        "Surgery",
+        "Chemotherapy",
+        "Radiation therapy"
+      ],
+      "follow_up_questions": [
+        "Have you noticed any lumps in your breast?",
+        "Do you have a family history of breast cancer?"
+      ]
+    },
+    {
+      "name": "Prostate Cancer",
+      "symptoms": [
+        "Difficulty urinating",
+        "Frequent urination",
+        "Blood in urine"
+      ],
+      "treatment": [
+        "Surgery",
+        "Radiation therapy",
+        "Hormone therapy"
+      ],
+      "follow_up_questions": [
+        "Are you experiencing urinary difficulties?",
+        "Have you been screened for prostate issues?"
+      ]
+    },
+    {
+      "name": "Lung Cancer",
+      "symptoms": [
+        "Persistent cough",
+        "Chest pain",
+        "Weight loss",
+        "Shortness of breath"
+      ],
+      "treatment": [
+        "Surgery",
+        "Chemotherapy",
+        "Radiation therapy"
+      ],
+      "follow_up_questions": [
+        "Are you a current or former smoker?",
+        "Do you have chronic cough or chest pain?"
+      ]
+    },
+    {
+      "name": "Colon Cancer",
+      "symptoms": [
+        "Blood in stool",
+        "Abdominal pain",
+        "Unexplained weight loss"
+      ],
+      "treatment": [
+        "Surgery",
+        "Chemotherapy",
+        "Radiation therapy"
+      ],
+      "follow_up_questions": [
+        "Do you have a family history of colon cancer?",
+        "Have you noticed changes in your bowel habits?"
+      ]
+    },
+    {
+      "name": "Skin Cancer (Non-Melanoma)",
+      "symptoms": [
+        "Skin lesions",
+        "Rough patches",
+        "Ulcers"
+      ],
+      "treatment": [
+        "Surgical removal",
+        "Topical treatments"
+      ],
+      "follow_up_questions": [
+        "Have you noticed any unusual skin growths?",
+        "Do you spend significant time in the sun?"
+      ]
+    },
+    {
+      "name": "Pancreatic Cancer",
+      "symptoms": [
+        "Abdominal pain",
+        "Weight loss",
+        "Jaundice",
+        "Digestive problems"
+      ],
+      "treatment": [
+        "Surgery",
+        "Chemotherapy",
+        "Radiation therapy"
+      ],
+      "follow_up_questions": [
+        "Do you have unexplained weight loss and abdominal pain?",
+        "Have you noticed yellowing of your skin or eyes?"
+      ]
+    },
+    {
+      "name": "Ovarian Cancer",
+      "symptoms": [
+        "Abdominal bloating",
+        "Pelvic pain",
+        "Difficulty eating"
+      ],
+      "treatment": [
+        "Surgery",
+        "Chemotherapy"
+      ],
+      "follow_up_questions": [
+        "Do you have persistent abdominal bloating?",
+        "Have you experienced pelvic pain?"
+      ]
+    },
+    {
+      "name": "Cervical Cancer",
+      "symptoms": [
+        "Abnormal vaginal bleeding",
+        "Pelvic pain",
+        "Pain during intercourse"
+      ],
+      "treatment": [
+        "Surgery",
+        "Radiation therapy",
+        "Chemotherapy"
+      ],
+      "follow_up_questions": [
+        "Have you had abnormal Pap smear results?",
+        "Are you experiencing unusual vaginal bleeding?"
+      ]
+    },
+    {
+      "name": "Endometrial Cancer",
+      "symptoms": [
+        "Abnormal vaginal bleeding",
+        "Pelvic pain",
+        "Weight loss"
+      ],
+      "treatment": [
+        "Surgery",
+        "Radiation therapy",
+        "Hormone therapy"
+      ],
+      "follow_up_questions": [
+        "Are you experiencing abnormal vaginal bleeding?",
+        "Do you have a history of hormonal imbalances?"
+      ]
+    },
+    {
+      "name": "Testicular Cancer",
+      "symptoms": [
+        "Lump or swelling in the testicle",
+        "Heaviness in the scrotum"
+      ],
+      "treatment": [
+        "Surgery",
+        "Radiation therapy",
+        "Chemotherapy"
+      ],
+      "follow_up_questions": [
+        "Have you noticed any lumps in your testicles?",
+        "Do you experience discomfort in your scrotum?"
+      ]
+    },
+    {
+      "name": "Brain Tumor",
+      "symptoms": [
+        "Headaches",
+        "Seizures",
+        "Cognitive changes",
+        "Personality changes"
+      ],
+      "treatment": [
+        "Surgery",
+        "Radiation therapy",
+        "Chemotherapy"
+      ],
+      "follow_up_questions": [
+        "Do you have persistent headaches?",
+        "Have you experienced changes in vision or personality?"
+      ]
+    },
+    {
+      "name": "Chronic Kidney Disease",
+      "symptoms": [
+        "Fatigue",
+        "Swelling in legs",
+        "Changes in urination",
+        "Loss of appetite"
+      ],
+      "treatment": [
+        "Dialysis",
+        "Medications",
+        "Lifestyle changes"
+      ],
+      "follow_up_questions": [
+        "Have you had abnormal kidney function tests?",
+        "Do you experience swelling in your legs?"
+      ]
+    },
+    {
+      "name": "Acute Kidney Injury",
+      "symptoms": [
+        "Sudden decrease in urine output",
+        "Swelling",
+        "Fatigue"
+      ],
+      "treatment": [
+        "Hospitalization",
+        "Treatment of underlying cause"
+      ],
+      "follow_up_questions": [
+        "Have you recently had a significant drop in urine output?",
+        "Did you experience severe dehydration or infection?"
+      ]
+    },
+    {
+      "name": "Glomerulonephritis",
+      "symptoms": [
+        "Blood in urine",
+        "Swelling",
+        "High blood pressure"
+      ],
+      "treatment": [
+        "Steroids",
+        "Immunosuppressants",
+        "Blood pressure control"
+      ],
+      "follow_up_questions": [
+        "Do you have dark or bloody urine?",
+        "Have you experienced swelling in your face or extremities?"
+      ]
+    },
+    {
+      "name": "Urinary Incontinence",
+      "symptoms": [
+        "Involuntary leakage of urine",
+        "Frequent urination"
+      ],
+      "treatment": [
+        "Pelvic floor exercises",
+        "Medications",
+        "Surgery in severe cases"
+      ],
+      "follow_up_questions": [
+        "Do you experience unexpected urine leakage?",
+        "Does it occur during physical activity?"
+      ]
+    },
+    {
+      "name": "Benign Prostatic Hyperplasia",
+      "symptoms": [
+        "Frequent urination",
+        "Weak urine stream",
+        "Difficulty initiating urination"
+      ],
+      "treatment": [
+        "Medications",
+        "Surgery in severe cases"
+      ],
+      "follow_up_questions": [
+        "Do you have difficulty starting urination?",
+        "Is your urine stream weak?"
+      ]
+    },
+    {
+      "name": "Cataracts",
+      "symptoms": [
+        "Blurred vision",
+        "Difficulty with glare",
+        "Faded colors"
+      ],
+      "treatment": [
+        "Surgical removal of the lens"
+      ],
+      "follow_up_questions": [
+        "Do you have difficulty seeing clearly?",
+        "Have you noticed colors appearing faded?"
+      ]
+    },
+    {
+      "name": "Glaucoma",
+      "symptoms": [
+        "Loss of peripheral vision",
+        "Eye pain",
+        "Halos around lights"
+      ],
+      "treatment": [
+        "Eye drops",
+        "Laser treatment",
+        "Surgery"
+      ],
+      "follow_up_questions": [
+        "Have you experienced a gradual loss of peripheral vision?",
+        "Do you experience eye pain or halos?"
+      ]
+    },
+    {
+      "name": "Macular Degeneration",
+      "symptoms": [
+        "Blurred central vision",
+        "Difficulty recognizing faces"
+      ],
+      "treatment": [
+        "Vitamin supplements",
+        "Anti-VEGF injections",
+        "Laser therapy"
+      ],
+      "follow_up_questions": [
+        "Do you have difficulty with tasks requiring central vision?",
+        "Have you noticed changes in the clarity of your vision?"
+      ]
+    },
+    {
+      "name": "Diabetic Retinopathy",
+      "symptoms": [
+        "Blurred vision",
+        "Floaters",
+        "Difficulty seeing at night"
+      ],
+      "treatment": [
+        "Laser therapy",
+        "Injections",
+        "Strict blood sugar control"
+      ],
+      "follow_up_questions": [
+        "Have you been diagnosed with diabetes?",
+        "Do you experience progressive vision changes?"
+      ]
+    },
+    {
+      "name": "Conjunctivitis",
+      "symptoms": [
+        "Redness in the eye",
+        "Itching",
+        "Discharge"
+      ],
+      "treatment": [
+        "Antibiotic or antiviral eye drops",
+        "Hygiene measures"
+      ],
+      "follow_up_questions": [
+        "Do you have red, irritated eyes?",
+        "Is there discharge from your eyes?"
+      ]
+    },
+    {
+      "name": "Otitis Media (Ear Infection)",
+      "symptoms": [
+        "Ear pain",
+        "Fever",
+        "Hearing difficulties"
+      ],
+      "treatment": [
+        "Antibiotics (if bacterial)",
+        "Pain relievers"
+      ],
+      "follow_up_questions": [
+        "Is your ear pain accompanied by fever?",
+        "Do you experience hearing loss?"
+      ]
+    },
+    {
+      "name": "Tinnitus",
+      "symptoms": [
+        "Ringing or buzzing in the ears"
+      ],
+      "treatment": [
+        "Sound therapy",
+        "Counseling",
+        "Hearing aids"
+      ],
+      "follow_up_questions": [
+        "Do you constantly hear ringing in your ears?",
+        "Is it interfering with your daily activities?"
+      ]
+    },
+    {
+      "name": "Sinusitis",
+      "symptoms": [
+        "Facial pain",
+        "Nasal congestion",
+        "Thick nasal discharge"
+      ],
+      "treatment": [
+        "Decongestants",
+        "Nasal corticosteroids",
+        "Saline irrigation"
+      ],
+      "follow_up_questions": [
+        "Do you experience facial pressure or pain?",
+        "Is your nasal discharge thick and discolored?"
+      ]
+    },
+    {
+      "name": "Allergic Rhinitis",
+      "symptoms": [
+        "Sneezing",
+        "Runny nose",
+        "Itchy eyes"
+      ],
+      "treatment": [
+        "Antihistamines",
+        "Nasal corticosteroids"
+      ],
+      "follow_up_questions": [
+        "Do you have symptoms triggered by allergens?",
+        "Are your eyes itchy along with a runny nose?"
+      ]
+    },
+    {
+      "name": "Eczema",
+      "symptoms": [
+        "Dry, itchy skin",
+        "Rashes",
+        "Inflammation"
+      ],
+      "treatment": [
+        "Moisturizers",
+        "Topical corticosteroids"
+      ],
+      "follow_up_questions": [
+        "Do you have a history of dry, itchy skin?",
+        "Are your rashes recurring?"
+      ]
+    },
+    {
+      "name": "Psoriasis",
+      "symptoms": [
+        "Red patches",
+        "Silvery scales"
+      ],
+      "treatment": [
+        "Topical treatments",
+        "Phototherapy",
+        "Systemic medications"
+      ],
+      "follow_up_questions": [
+        "Do you have persistent red, scaly patches?",
+        "Are your joints affected as well?"
+      ]
+    },
+    {
+      "name": "Acne Vulgaris",
+      "symptoms": [
+        "Pimples",
+        "Blackheads",
+        "Whiteheads"
+      ],
+      "treatment": [
+        "Topical retinoids",
+        "Antibiotics",
+        "Hormonal treatments"
+      ],
+      "follow_up_questions": [
+        "Do you experience recurring breakouts?",
+        "Is your acne severe enough to cause scarring?"
+      ]
+    },
+    {
+      "name": "Rosacea",
+      "symptoms": [
+        "Facial redness",
+        "Visible blood vessels",
+        "Acne-like bumps"
+      ],
+      "treatment": [
+        "Topical treatments",
+        "Oral antibiotics"
+      ],
+      "follow_up_questions": [
+        "Do you experience persistent facial redness?",
+        "Are your symptoms triggered by heat or spicy foods?"
+      ]
+    },
+    {
+      "name": "Lupus (Systemic Lupus Erythematosus)",
+      "symptoms": [
+        "Joint pain",
+        "Butterfly rash",
+        "Fatigue",
+        "Fever"
+      ],
+      "treatment": [
+        "Immunosuppressants",
+        "Corticosteroids",
+        "Antimalarials"
+      ],
+      "follow_up_questions": [
+        "Do you experience a butterfly rash on your face?",
+        "Is your joint pain worsened by sun exposure?"
+      ]
+    },
+    {
+      "name": "Fibromyalgia",
+      "symptoms": [
+        "Widespread musculoskeletal pain",
+        "Fatigue",
+        "Sleep disturbances"
+      ],
+      "treatment": [
+        "Pain relievers",
+        "Physical therapy",
+        "Stress management"
+      ],
+      "follow_up_questions": [
+        "Do you experience widespread pain and fatigue?",
+        "Does stress make your symptoms worse?"
+      ]
+    },
+    {
+      "name": "Chronic Fatigue Syndrome",
+      "symptoms": [
+        "Extreme fatigue",
+        "Sleep abnormalities",
+        "Cognitive impairment"
+      ],
+      "treatment": [
+        "Lifestyle changes",
+        "Cognitive therapy",
+        "Medications for symptomatic relief"
+      ],
+      "follow_up_questions": [
+        "Is your fatigue persistent and unexplained?",
+        "Does rest not seem to help?"
+      ]
+    },
+    {
+      "name": "Endometriosis",
+      "symptoms": [
+        "Pelvic pain",
+        "Painful periods",
+        "Infertility"
+      ],
+      "treatment": [
+        "Hormonal therapies",
+        "Surgery"
+      ],
+      "follow_up_questions": [
+        "Do you experience severe menstrual cramps?",
+        "Have you been diagnosed with endometriosis?"
+      ]
+    },
+    {
+      "name": "Polycystic Ovary Syndrome (PCOS)",
+      "symptoms": [
+        "Irregular menstrual cycles",
+        "Excess hair growth",
+        "Acne"
+      ],
+      "treatment": [
+        "Lifestyle changes",
+        "Hormonal treatments"
+      ],
+      "follow_up_questions": [
+        "Do you have irregular menstrual cycles?",
+        "Are you experiencing symptoms like excess hair or acne?"
+      ]
+    },
+    {
+      "name": "Infertility",
+      "symptoms": [
+        "Inability to conceive after one year of unprotected intercourse"
+      ],
+      "treatment": [
+        "Fertility treatments",
+        "Lifestyle modifications"
+      ],
+      "follow_up_questions": [
+        "Have you been trying to conceive for over a year?",
+        "Have you consulted a fertility specialist?"
+      ]
+    },
+    {
+      "name": "Varicose Veins",
+      "symptoms": [
+        "Bulging, twisted veins",
+        "Leg pain",
+        "Swelling"
+      ],
+      "treatment": [
+        "Compression stockings",
+        "Sclerotherapy",
+        "Surgery"
+      ],
+      "follow_up_questions": [
+        "Do you notice swollen veins in your legs?",
+        "Is your leg pain worse after standing?"
+      ]
+    },
+    {
+      "name": "Deep Vein Thrombosis (DVT)",
+      "symptoms": [
+        "Swelling in one leg",
+        "Pain or tenderness in the leg",
+        "Warmth in the affected area"
+      ],
+      "treatment": [
+        "Anticoagulant medications",
+        "Compression stockings"
+      ],
+      "follow_up_questions": [
+        "Do you experience unilateral leg swelling?",
+        "Have you been immobile for long periods?"
+      ]
+    },
+    {
+      "name": "Hyperlipidemia",
+      "symptoms": [
+        "Usually asymptomatic",
+        "Possible xanthomas in severe cases"
+      ],
+      "treatment": [
+        "Dietary changes",
+        "Statins",
+        "Exercise"
+      ],
+      "follow_up_questions": [
+        "Have you had high cholesterol levels in recent tests?",
+        "Do you follow a high-fat diet?"
+      ]
+    }
+  ]
+}

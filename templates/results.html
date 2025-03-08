@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block title %}Results - Health Symptom Checker{% endblock %}
+
+{% block content %}
+<div class="card">
+  <div class="card-body">
+    <h2 class="mb-4">Possible Conditions (Most Likely First):</h2>
+    {% if results %}
+      {% for condition in results %}
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">{{ condition.name }}</h5>
+            <!-- Match indicator using squares -->
+            <div class="match-squares mb-2">
+              {% if condition.strength == "STRONG match" %}
+                <span class="filled-square"></span>
+                <span class="filled-square"></span>
+                <span class="filled-square"></span>
+                <span class="filled-square"></span>
+              {% elif condition.strength == "MODERATE match" %}
+                <span class="filled-square"></span>
+                <span class="filled-square"></span>
+                <span class="filled-square"></span>
+                <span class="empty-square"></span>
+              {% else %}
+                <span class="filled-square"></span>
+                <span class="filled-square"></span>
+                <span class="empty-square"></span>
+                <span class="empty-square"></span>
+              {% endif %}
+            </div>
+            <p class="fw-bold text-secondary">{{ condition.strength }}</p>
+            
+            <!-- Follow-up questions if any -->
+            {% if condition.follow_up_needed and condition.follow_up_needed|length > 0 %}
+              <div class="alert alert-warning">
+                <h6>Additional Info Needed:</h6>
+                <ul>
+                  {% for question in condition.follow_up_needed %}
+                    <li>{{ question }}</li>
+                  {% endfor %}
+                </ul>
+              </div>
+            {% endif %}
+            
+            <!-- Treatment Section -->
+            <h6 class="mt-3">Treatment:</h6>
+            {% if condition.treatment is string %}
+              <p class="card-text fs-5">{{ condition.treatment }}</p>
+            {% elif condition.treatment is iterable %}
+              <ul>
+                {% for item in condition.treatment %}
+                  <li>{{ item }}</li>
+                {% endfor %}
+              </ul>
+            {% else %}
+              <p class="card-text fs-5">No treatment info available.</p>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    {% else %}
+      <p class="text-danger fs-5">No matching conditions found. Please consult a doctor.</p>
+    {% endif %}
+    <div class="mt-4">
+      <a href="{{ url_for('index') }}" class="btn btn-lg btn-secondary w-100">New Search</a>
+    </div>
+    <div class="mt-3">
+      <a href="{{ url_for('close') }}" class="btn btn-lg btn-danger w-100">Close Program</a>
+    </div>
+    <div class="disclaimer mt-4">
+      <small class="text-muted">
+        <strong>Disclaimer:</strong> This tool is not a substitute for professional medical advice.
+        Consult a doctor for serious or persistent symptoms.
+      </small>
+    </div>
+  </div>
+</div>
+{% endblock %}
