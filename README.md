@@ -1,6 +1,8 @@
-<<<<<<< HEAD
+
+## DCIT313 Artificial Intelligent Semester Project ##
+
 # HealthSymptomChecker
-=======
+
 # Health Symptom Checker Expert System
 
 The Health Symptom Checker Expert System is a web-based tool that allows users to enter their symptoms along with basic demographic data (age and sex) to receive a preliminary assessment of potential medical conditions. The system uses a static knowledge base and a simple rule-based scoring system to display treatment recommendations and follow-up questions. It is designed with a responsive, multi-page layout using Flask and Bootstrap.
@@ -134,4 +136,4 @@ System Documentation: Describes the system architecture, design decisions, and l
 Contributing
 If you'd like to contribute, please fork this repository and submit a pull request with your changes. Follow standard coding practices and include tests and documentation as needed.
 
->>>>>>> aaec236 (version 1.0 commit for Heroku deployment)
+
