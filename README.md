@@ -1,7 +1,5 @@
 
-## DCIT313 Artificial Intelligent Semester Project ##
-
-# HealthSymptomChecker
+# DCIT313 Artificial Intelligent Semester Project
 
 # Health Symptom Checker Expert System
 
